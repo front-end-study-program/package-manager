@@ -77,11 +77,10 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
      ```
  
  - nvm
- ```shell
- vim ~/.bash_profile
-// 加入配置文件
-export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
-// 重启配置文件
-source ~/.bashrc
-
- ```
+   ```shell
+   vim ~/.bash_profile
+   // 加入配置文件
+   export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
+   // 重启配置文件
+   source ~/.bashrc
+    ```
