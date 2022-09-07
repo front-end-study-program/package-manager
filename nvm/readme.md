@@ -5,6 +5,7 @@
 ## install
 
 - macos 或者 Linux 安装或更新 [nvm](https://github.com/nvm-sh/nvm) 可以使用 curl 或者 wget 命令
+
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
@@ -14,6 +15,7 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 - 执行以上命令可能会遇到 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused 的错误，可以更改 hosts 文件来解决
+
 ```shell
 199.232.68.133 raw.githubusercontent.com
 199.232.68.133 user-images.githubusercontent.com
@@ -60,27 +62,28 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 6. 国内下载 node 版本会很慢可以设置对应国内的镜像源
 
- - nvm-windows
- 
-   - 使用命令行
+- nvm-windows
 
-     ```shell
-     nvm node_mirror https://npmmirror.com/mirrors/node/
-     nvm npm_mirror https://npmmirror.com/mirrors/npm/
-     ```
+  - 使用命令行
 
-   - 修改 nvm安装路径下/setting 文件
-
-     ```txt
-     node_mirror https://npmmirror.com/mirrors/node/
-     npm_mirror https://npmmirror.com/mirrors/npm/
-     ```
- 
- - nvm
-   ```shell
-   vim ~/.bash_profile
-   // 加入配置文件
-   export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
-   // 重启配置文件
-   source ~/.bashrc
+    ```shell
+    nvm node_mirror https://npmmirror.com/mirrors/node/
+    nvm npm_mirror https://npmmirror.com/mirrors/npm/
     ```
+
+  - 修改 nvm 安装路径下/setting 文件
+
+    ```txt
+    node_mirror https://npmmirror.com/mirrors/node/
+    npm_mirror https://npmmirror.com/mirrors/npm/
+    ```
+
+- nvm
+
+  ```shell
+  vim ~/.bash_profile
+  // 加入配置文件
+  export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
+  // 重启配置文件
+  source ~/.bashrc
+  ```
